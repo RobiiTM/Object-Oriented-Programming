@@ -1,4 +1,4 @@
-package Compozitie;
+package compozitie;
 
 public class CardSim {
     private String operator;

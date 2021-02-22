@@ -1,4 +1,4 @@
-package Compozitie;
+package compozitie;
 
 public class Main {
     public static void main(String[] args) {

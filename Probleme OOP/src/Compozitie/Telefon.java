@@ -1,4 +1,4 @@
-package Compozitie;
+package compozitie;
 
 public class Telefon {
     private String model;
