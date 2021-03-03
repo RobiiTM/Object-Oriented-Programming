@@ -69,8 +69,22 @@ public class Main {
                 String nume = produs.getNume();
                 double pret = produs.getPret();
                 String producator = produs.getProducator();
-                System.out.println("Nume produs: " + nume + " | " + "Pret: " + pret + " lei" + " | " + "Producator: " + producator);
-                System.out.println("");
+
+                if (produs instanceof Fruct) {
+                    Fruct fruct = (Fruct) produs;
+                    System.out.println("Nume produs: " + nume + " | " + "Pret: " + pret + " lei" + " | " + "Producator: " + producator + " | " + "Fructul este bio: " + fruct.isBio());
+                    System.out.println("");
+                }
+                if (produs instanceof Haine) {
+                    Haine haine = (Haine) produs;
+                    System.out.println("Nume produs: " + nume + " | " + "Pret: " + pret + " lei" + " | " + "Producator: " + producator + " | " + "Are marimea: " + haine.getMarime());
+                    System.out.println("");
+                }
+                if (produs instanceof Dulciuri) {
+                    Dulciuri dulciuri = (Dulciuri) produs;
+                    System.out.println("Nume produs: " + nume + " | " + "Pret: " + pret + " lei" + " | " + "Producator: " + producator + " | " + "Dulciurile au " + dulciuri.getGramaj() + " de grame.");
+                    System.out.println("");
+                }
             }
         }
     }

@@ -1,6 +1,6 @@
 package gestiuneproduse;
 
-public class Produs {
+public abstract class Produs {
     private String nume;
     private double pret;
     private String producator;
@@ -10,6 +10,8 @@ public class Produs {
         this.pret = pret;
         this.producator = producator;
     }
+
+    public abstract String getCategory();
 
     public String getNume() {
         return nume;

@@ -7,10 +7,20 @@ public class Haine extends Produs {
         super(nume, pret, producator);
     }
 
+    @Override
+    public String getCategory() {
+        return "Heine";
+    }
+
     public String getMarime() {
         return marime;
     }
     public void setMarime(String marime) {
         this.marime = marime;
+    }
+
+    @Override
+    public String getNume() {
+        return "Haine - " + super.getNume();
     }
 }

@@ -7,6 +7,11 @@ public class Dulciuri extends Produs{
         super(nume, pret, producator);
     }
 
+    @Override
+    public String getCategory() {
+        return null;
+    }
+
     public int getGramaj() {
         return gramaj;
     }
