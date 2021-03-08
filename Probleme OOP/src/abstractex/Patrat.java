@@ -1,6 +1,6 @@
 package abstractex;
 
-public class Patrat extends FormaGeometrica {
+public class Patrat implements FormaGeometrica {
     private double lun;
 
     public double getLun() {
