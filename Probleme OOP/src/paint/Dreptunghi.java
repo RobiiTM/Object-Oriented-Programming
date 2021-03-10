@@ -20,6 +20,8 @@ public class Dreptunghi extends FormaGeometrica{
 
     @Override
     public void deseneaza() {
-
+        System.out.println("Punctul de desenare");
+        System.out.println(super.getStartPointX() + " " + super.getStartPointY());
+        System.out.println("Lungimea dreptunghiului este " + lungime + " si latimea este " + latime);
     }
 }
